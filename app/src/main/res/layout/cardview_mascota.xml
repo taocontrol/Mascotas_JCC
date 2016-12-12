@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cvMascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    card_view:carCornerRadius="@dimen/corner_radius_cardview"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="7dp"
+        >
+        <ImageView
+            android:id="@+id/imgFoto"
+            android:layout_width="@dimen/imagen_mascota"
+            android:layout_height="@dimen/imagen_mascota"
+            android:src="@drawable/mascota_01"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="fill_vertical"
+            android:background="@color/colorAccent"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/btnRaiting"
+                    android:layout_width="@dimen/imagen_hueso"
+                    android:layout_height="@dimen/imagen_hueso"
+                    android:layout_marginLeft="@dimen/left"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bone"
+                    android:background="@color/colorAccent"
+                    />
+                <TextView
+                    android:id="@+id/tvNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/left"
+                    android:gravity="center"
+                    android:textColor="@color/blanco"
+                    android:text="@string/nombre"
+                    android:textSize="@dimen/tamanio_nombre"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <TextView
+                    android:id="@+id/tvRaiting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/left"
+                    android:layout_gravity="center"
+                    android:textColor="@color/blanco"
+                    android:text="@string/raiting"
+                    android:textSize="@dimen/tamanio_nombre"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/ivHueso"
+                    android:layout_width="@dimen/imagen_hueso"
+                    android:layout_height="@dimen/imagen_hueso"
+                    android:layout_marginRight="@dimen/left"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bone_flat"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

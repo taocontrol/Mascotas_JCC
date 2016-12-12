@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.taocontrol.mascotas_s5.AcercaDeActivity"
+    android:background="@color/cafe"
+    android:orientation="vertical"
+    >
+
+    <include android:id="@+id/miActionBar2"
+        layout="@layout/actionbar2">
+
+    </include>
+
+    <TextView
+        android:id="@+id/tvContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:gravity="right"
+        android:text="@string/acerca_de"
+        android:textColor="@color/blanco"
+        android:textStyle="bold"
+        android:textSize="@dimen/tamanio_titulo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_gravity="fill_horizontal"
+        android:textColor="@color/blanco"
+        android:textSize="@dimen/tamanio_nombre"
+        android:text="Juan Carlos Collivadino\n\n
+        Andorid Student Jr.\n\n
+        Salta CP 4400\n\n
+        Argentina\
+        "/>
+
+</LinearLayout>

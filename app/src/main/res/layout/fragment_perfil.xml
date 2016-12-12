@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.PerfilFragment"
+    android:background="@color/cafe"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/ciPrincipal"
+        android:layout_width="@dimen/imagen_mascota"
+        android:layout_height="@dimen/imagen_mascota"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/mascota_01"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="@dimen/border_circleview"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10"
+        app:civ_shadow_color="@color/colorPrimary"
+        />
+    <TextView
+        android:id="@+id/tvNombre_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/tamanio_nombre"
+        android:text="Bunny"
+        android:textColor="@color/blanco"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMascotas_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/ciPrincipal" />
+
+</LinearLayout>

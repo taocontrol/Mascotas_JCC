@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:elevation="@dimen/elevacion_actionbar"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    >
+
+    <ImageView
+        android:id="@+id/ivHuella"
+        android:layout_width="@dimen/tamanio_imagen_actionbar"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:src="@drawable/bone"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/txTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/titulo_actionbar"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="@dimen/tamanio_titulo"
+        android:textColor="@color/blanco"/>
+</android.support.v7.widget.Toolbar>
